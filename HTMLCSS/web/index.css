@@ -1,0 +1,132 @@
+@import url("http://fonts.googleapis.com/css?family=Croissant+One");
+body{
+  background-color: #efe5d0;
+  font-family: sans-serif;
+  font-size: small;
+  margin: 0px;
+  text-align: center;
+}
+
+p{
+    font-size: 1.4em;
+}
+
+h1{
+    font-family: "Croissant One",cursive;
+    font-size: 2em;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+h4{
+    font-size: 1.0em;
+}
+
+div.footer h4 span.ref{
+    font-weight: bold;
+}
+
+div.footer h4 span.link{
+    text-decoration: underline;
+    color: blue;
+}
+
+.header{
+    margin: 50px;
+}
+
+.footer{
+    margin-top: 50px; 
+}
+
+#tableContainer{
+    display: table;
+    border-spacing: 10px;
+    border: 6px #000000 ridge;
+    background-color: gainsboro;
+    margin: auto;
+}
+
+#tableRow{
+    display: table-row;
+    table-layout: fixed;
+}
+
+#site1{
+    display: table-cell;
+    padding: 25px;
+    background-color: darkcyan;
+    width: 230px;
+}
+
+#img_site1{
+    height: 150px;
+    width: 200px;
+}
+
+
+#site2{
+    display: table-cell;
+    padding: 25px;
+    background-color: yellowgreen;
+    width: 230px;
+}
+
+#img_site2{
+    height: 150px;
+    width: 200px;
+}
+
+#site3{
+    display: table-cell;
+    padding: 25px;
+    background-color: #000000;
+    width: 230px;
+}
+
+#img_site3{
+    height: 150px;
+    width: 200px;
+}
+
+#site4{
+    display: table-cell;
+    padding: 25px;
+    background-color: black;
+    width: 230px;
+}
+
+#img_site4{
+    height: 150px;
+    width: 200px;
+}
+
+.sub{
+    font-size: 1.4em;
+    border-radius: 10px;
+    font-family: monospace;
+    background-color: #fcd4a8;
+}
+
+#test{
+    margin: 30px;
+}
+
+#test_enlarged{
+    margin-top: 100px;
+    background-color: #efe5d0;
+}
+
+a:link{
+    color: darkblue;
+}
+
+a:hover{
+    color: #d12c47;
+}
+
+a:checked{
+    color: chocolate;
+}

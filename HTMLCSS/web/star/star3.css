@@ -1,0 +1,84 @@
+body {
+  background-color: #b5a789;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: small;
+  margin: 0px;
+}
+
+/*jello layout: a way of keeping the HTML in the right order, and don't have
+any liquid div element on one or other side of a two-column design'. An 
+intermediate between liquid and frozen layout.*/
+#allcontent{
+    width: 800px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #675c47;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+  background-color: #675c47;
+  margin: 10px;
+  height: 108px;
+}
+
+/*for using the floating on the right div element, it would have to be put in a
+wrong order in the html, as we always have to put the div which will float right
+after the headings, so that the other column div elemnts would flow after what's 
+been floated. In this case, to preserve the correct order (with the main before 
+the sidebar (and not the opposite), we had to move on with the floating of the 
+main, instead of that of the sidebar, what, unfortunately, leaded to a too liquid 
+sidebar. The solution, therefore, was to freeze everything by a jello layout, 
+with another div (allelements) involving both div columns, and setting an auto 
+margin for it in order to keep it always centralized no metter what resolution.
+Other solution would be absolute positioning with no floats at all.*/
+
+#main {
+  background: #efe5d0 url(images/background.gif) top left;
+  font-size: 105%;
+  padding: 15px;
+  margin: 0px 10px 10px 10px;
+  width: 420px;
+  float: left;
+}
+
+#sidebar {
+  background: #efe5d0 url(images/background.gif) bottom right;
+  font-size: 105%;
+  padding: 15px;
+  margin: 0px 10px 10px 470px;
+}
+
+#footer {
+  background-color: #675c47;
+  color: #efe5d0;
+  text-align: center;
+  padding: 15px;
+  margin: 10px;
+  font-size: 90%;
+  clear:left;
+}
+
+h1 {
+  font-size: 120%;
+  color: #954b4b;
+}
+
+.slogan { color: #954b4b; }
+
+.beanheading {
+  text-align: center;
+  line-height: 1.8em;
+}
+
+a:link {
+  color: #b76666;
+  text-decoration: none;
+  border-bottom: thin dotted #b76666;
+}
+a:visited {
+  color: #675c47;
+  text-decoration: none;
+  border-bottom: thin dotted #675c47;
+}

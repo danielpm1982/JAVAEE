@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Javascript Examples</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                text-align: center;
+                background-color: black;
+                margin-top: 3em;
+                margin-bottom: 3em;
+            }
+            header{
+                font-size: 3em; 
+                font-weight: bolder; 
+                color: blanchedalmond;
+                text-decoration-line: underline;
+                text-decoration-style: solid;
+                text-decoration-color: chartreuse;
+                text-decoration-style: wavy;
+            }
+            article#displayText{
+                margin: auto;
+                font-size: 2em; 
+                font-weight: bolder; 
+                margin-top: 2em;
+                color: blanchedalmond;
+                line-height: 1.5;
+                width: 60%;
+                /*border: solid chartreuse 0.1em;*/
+            }
+            img#js{
+                margin: auto;
+                margin-top: 0em;
+                margin-bottom: 2em;
+                width: 8%;
+            }
+            img#navRight,img#navLeft,img#navX{
+                width: 5em;
+                position: relative;
+            }
+            img#navRight{
+                left: 10%;
+            }
+            img#navLeft{
+                left: -10%;
+            }
+            img#navX{
+                left: 10%;
+            }
+            input[type="button"]{
+                font-size: 1.0em;
+                line-height: 2;
+                font-weight: 900;
+                display: inline;
+                margin: auto;
+                margin-top: 2em;
+                background-color: lightskyblue;
+                width: 13em;
+            }
+            canvas#myCanvas{
+                margin-top: 4em;
+                border: solid 0.3em white;
+                background-color: blanchedalmond;
+            }
+            form{
+                background-color: blanchedalmond;
+                width: 20em;
+                margin: auto;
+                margin-top: 2em;
+                padding: 0em 1em 0em 1em;
+                line-height: 2.5;
+                display: table;
+                border-collapse: separate;
+                text-align: left;
+            }
+            form p{
+                display: table-row;
+            }
+            form p label, form p select{
+                display: table-cell;
+                vertical-align: bottom;
+            }
+            form p label{
+                font-size: 1.2em;
+                font-weight: bold;
+            }
+            form p select{
+                font-size: 1em;
+            }
+        </style>
+        <style media="screen and (max-width:851px)">
+            header{
+                font-size: 1.5em;
+            }
+            article#displayText{
+                font-size: 0.8em;
+                margin-top: 2em;
+                width: 100%;
+            }
+            article#display img{
+                width: 100%;
+            }
+            img#js{
+                margin: auto;
+                margin-top: 0em;
+                margin-bottom: 2em;
+                width: 30%;
+            }
+            img#navRight,img#navLeft,img#navX{
+                width: 3em;
+            }
+            input[type="button"]{
+                font-size: 0.8em;
+            }
+            canvas#myCanvas{
+                margin-top: 1em;
+                border: solid 0.5em white;
+                background-color: blanchedalmond;
+                width: 80%;
+                height: 10em;
+            }
+            form{
+                width: 15em;
+                margin-top: 1em;
+                padding: 0.5em 0.5em 0.5em 0.5em;
+                line-height: 1.5;
+            }
+            form p{
+                display: table-row;
+            }
+            form p label, form p select{
+                display: table-cell;
+                vertical-align: bottom;
+            }
+            form p label{
+                font-size: 1em;
+                font-weight: bold;
+            }
+            form p select{
+                font-size: 0.8em;
+            }
+        </style>
+        <style media="screen and (max-device-width:479px)">
+            header{
+                font-size: 1.5em;
+            }
+            article#displayText{
+                font-size: 0.8em;
+                margin-top: 2em;
+                width: 100%;
+            }
+            article#display img{
+                width: 100%;
+            }
+            img#js{
+                margin: auto;
+                margin-top: 0em;
+                margin-bottom: 2em;
+                width: 30%;
+            }
+            img#navRight,img#navLeft,img#navX{
+                width: 3em;
+            }
+            input[type="button"]{
+                font-size: 0.8em;
+            }
+            canvas#myCanvas{
+                margin-top: 1em;
+                border: solid 0.5em white;
+                background-color: blanchedalmond;
+                width: 80%;
+                height: 10em;
+            }
+            form{
+                width: 15em;
+                margin-top: 1em;
+                padding: 0.5em 0.5em 0.5em 0.5em;
+                line-height: 1.5;
+            }
+            form p{
+                display: table-row;
+            }
+            form p label, form p select{
+                display: table-cell;
+                vertical-align: bottom;
+            }
+            form p label{
+                font-size: 1em;
+                font-weight: bold;
+            }
+            form p select{
+                font-size: 0.8em;
+            }
+        </style>
+    </head>
+    <body>
+        <header></header>
+        <section id="draw">
+        </section>
+        <form>
+            <p>
+                <label for="backgroundColor">Select background color:</label>
+                <select id="backgroundColor">
+                    <option value="white" selected="selected">White</option>
+                    <option value="black">Black</option>
+                </select>
+            </p>
+            <p>
+                <label for="shape">Circles or squares?</label>
+                <select id="shape">
+                    <option value="none" selected="selected">Neither</option>
+                    <option value="circles">Circles</option>
+                    <option value="squares">Squares</option>
+                </select>
+            </p>
+            <p>
+                <label for="foregroundColor">Select text color:</label>
+                <select id="foregroundColor">
+                    <option value="black" selected="selected">Black</option>
+                    <option value="white">White</option>
+                </select>
+            </p>
+            <p>
+                <label for="tweets">Pick a tweet:</label>
+                <select id="tweets">
+                </select>
+            </p>
+        </form>
+        <input type="button" id="previewButton" value="PreviewCanvas">
+        <input type="button" id="updateTweetsButton" value="UpdateTweets">
+        <section id="section">
+            <article id="displayText"></article>
+        </section>
+        <section>
+            <a href="javascript/test6.js" target="_blank"><img src="images/js.png" id="js" alt="javascript code" title="javascript code"></a>
+        </section>
+        <nav>
+            <a href="test5.html"><img id="navLeft" src="images/navLeft.png" alt="navLeft" title="navLeft"></a>
+            <a href="test7.html"><img id="navRight" src="images/navRight.png" alt="navRight" title="navRight"></a>
+        </nav>
+        <script src="javascript/test6.js"></script>
+        <script id="JSONPScript"></script>
+    </body>
+</html>
