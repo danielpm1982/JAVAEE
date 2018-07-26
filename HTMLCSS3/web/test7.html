@@ -1,0 +1,332 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Javascript Examples</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                text-align: center;
+                background-color: black;
+                margin-top: 3em;
+                margin-bottom: 3em;
+            }
+            header{
+                font-size: 3em; 
+                font-weight: bolder; 
+                color: blanchedalmond;
+                text-decoration-line: underline;
+                text-decoration-style: solid;
+                text-decoration-color: chartreuse;
+                text-decoration-style: wavy;
+            }
+            article#displayText{
+                margin: auto;
+                font-size: 2em; 
+                font-weight: bolder; 
+                margin-top: 1em;
+                margin-bottom: 1.5em;
+                color: blanchedalmond;
+                line-height: 1.5;
+                width: 60%;
+                /*border: solid chartreuse 0.1em;*/
+            }
+            img#js{
+                margin: auto;
+                margin-top: 2em;
+                margin-bottom: 2em;
+                width: 5%;
+            }
+            
+            img#navRight,img#navLeft,img#navX{
+                width: 5em;
+                position: relative;
+            }
+            img#navRight{
+                left: 10%;
+            }
+            img#navLeft{
+                left: -10%;
+            }
+            img#navX{
+                left: 10%;
+            }
+            input[type="button"]{
+                font-size: 0.8em;
+                line-height: 2;
+                font-weight: 900;
+                display: inline;
+                margin: auto;
+                margin-top: 2em;
+                background-color: lightskyblue;
+                width: 8em;
+            }
+            div#controls{
+                margin: auto;
+                letter-spacing: 1em;
+                position: relative;
+                top: -31.5em;
+            }
+            div#controls a.controls img{
+                width: 4em;
+            }
+            div#effects{
+                position: relative;
+                top: -31em;
+                letter-spacing: 2em;
+                margin-bottom: -22em;
+            }
+            div#selectors{
+                position: relative;
+                letter-spacing: 2em;
+            }
+            div#selectors p{
+                letter-spacing: 0em;
+                margin: auto;
+                font-size: 2em; 
+                font-weight: bolder; 
+                margin-top: 1em;
+                margin-bottom: 1em;
+                color: blanchedalmond;
+                line-height: 1.5;
+                width: 60%;
+            }
+            div#selectors a.selectors img{
+                width: 10em;
+                height: 7em;
+            }
+            img#tvConsole{
+                display: block;
+                margin: auto;
+                margin-top: 4em;
+            }
+            video#video{
+                position: relative;
+                top: -34.8em;
+                left: 12.85em;
+                height: 14.5em;
+                width: 25em;
+            }
+            canvas#buffer{
+                position: absolute;
+                top: 0em;
+                left: 0em;
+                height: 0em;
+                width: 0em;
+            }
+            canvas#display{
+                position: relative;
+                top: -34.8em;
+                left: -12.4em;
+                height: 14.5em;
+                width: 25em;
+            }
+            section#tv{
+                position: relative;
+            }
+        </style>
+        <style media="screen and (max-width:1055px)">
+            header{
+                font-size: 1.5em;
+            }
+            img#js{
+                width: 8%;
+            }
+            img#navRight,img#navLeft,img#navX{
+                width: 3em;
+            }
+            input[type="button"]{
+                font-size: 0.6em;
+                line-height: 1.5;
+                width: 7em;
+            }
+            div#controls{
+                letter-spacing: 0.5em;
+                top: -18.5em;
+            }
+            div#controls a.controls img{
+                width: 2em;
+            }
+            div#effects{
+                top: -18em;
+                letter-spacing: 0.5em;
+                margin-bottom: -14em;
+            }
+            div#selectors{
+                letter-spacing: 1em;
+            }
+            div#selectors p{
+                font-size: 1.5em; 
+            }
+            div#selectors a.selectors img{
+                width: 10em;
+                height: 7em;
+            }
+            img#tvConsole{
+                margin-top: 4em;
+                width: 35em;
+            }
+            video#video{
+                top: -19.7em;
+                left: 7em;
+                height: 9em;
+                width: 13.5em;
+            }
+            canvas#display{
+                top: -20.2em;
+                left: -6.75em;
+                height: 7.8em;
+                width: 13.5em;
+            }
+        </style>
+        <style media="screen and (max-width:640px)">
+            img#js{
+                width: 15%;
+            }
+            img#navRight,img#navLeft,img#navX{
+                width: 3em;
+            }
+            input[type="button"]{
+                font-size: 0.6em;
+                width: 7em;
+            }
+            div#controls{
+                letter-spacing: 0.5em;
+                top: -8.5em;
+            }
+            div#controls a.controls img{
+                width: 1em;
+            }
+            div#effects{
+                top: -6em;
+                letter-spacing: 0.2em;
+                margin-bottom: 0em;
+            }
+            div#selectors{
+                top: -5.5em;
+                margin-bottom: -7em;
+            }
+            div#selectors p{
+                font-size: 1em; 
+            }
+            div#selectors a.selectors img{
+                width: 5em;
+                height: 3.5em;
+            }
+            img#tvConsole{
+                width: 17em;
+            }
+            video#video{
+                top: -9.2em;
+                left: 3.5em;
+                height: 3.8em;
+                width: 6.5em;
+            }
+            canvas#display{
+                top: -9.2em;
+                left: -3.28em;
+                height: 3.8em;
+                width: 6.5em;
+            }
+        </style>
+        <style media="screen and (max-device-width:479px)">
+            img#js{
+                width: 15%;
+            }
+            img#navRight,img#navLeft,img#navX{
+                width: 3em;
+            }
+            input[type="button"]{
+                font-size: 0.6em;
+                width: 7em;
+            }
+            div#controls{
+                letter-spacing: 0.5em;
+                top: -8.5em;
+            }
+            div#controls a.controls img{
+                width: 1em;
+            }
+            div#effects{
+                top: -6em;
+                letter-spacing: 0.2em;
+            }
+            div#selectors{
+                top: -5.5em;
+                margin-bottom: -5em;
+            }
+            div#selectors p{
+                font-size: 1em; 
+            }
+            div#selectors a.selectors img{
+                width: 5em;
+                height: 3.5em;
+            }
+            img#tvConsole{
+                width: 17em;
+            }
+            video#video{
+                top: -9.2em;
+                left: 3.5em;
+                height: 3.8em;
+                width: 6.5em;
+            }
+            canvas#display{
+                top: -9.2em;
+                left: -3.28em;
+                height: 3.8em;
+                width: 6.5em;
+            }
+        </style>
+    </head>
+    <body>
+        <header></header>
+        <section id="tv">
+            <img alt="tvConsole" id="tvConsole" src="images/tvConsole.jpg">
+<!--            <video controls autoplay loop preload="metadata" width="0" height="0"
+                poster="images/video1.png" id="video">
+                <source src="videos/video1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' >
+                <source src="videos/video1.webm" type='video/webm; codecs="vp8, vorbis"'>
+                <source src="videos/video1.ogv" type='video/ogg; codecs="theora, vorbis"'>
+                <p>Video format nor supported by user's browser!</p>
+            </video>-->
+            <video controls poster="images/video.png" id="video">
+            </video>
+            <canvas id="buffer"></canvas>
+            <canvas id="display"></canvas>
+            <div id="controls">
+                <a class="controls"><img src="images/play.png" id="play" alt="play command" title="play command"></a>
+                <a class="controls"><img src="images/pause.png" id="pause" alt="pause command" title="pause command"></a>
+                <a class="controls"><img src="images/stop.png" id="stop" alt="stop command" title="stop command"></a>
+                <a class="controls"><img src="images/next.png" id="next" alt="next command" title="next command"></a>
+                <a class="controls"><img src="images/previous.png" id="previous" alt="previous command" title="previous command"></a>
+            </div>
+            <div id="effects">
+                <input type="button" class="effects" id="filterColorButton" value="FilterColor">
+                <input type="button" class="effects" id="sepiaColorButton" value="SepiaColor">
+                <input type="button" class="effects" id="invertColorButton" value="InvertColor">
+                <input type="button" class="effects" id="bwcartoonColorButton" value="Bwcartoon">
+            </div>
+            <div id="selectors">
+                <p>Video Selection (click on any of the below):</p>
+                <a class="selectors"><img src="images/video1.png" id="video1" alt="playVideo1" title="playVideo1"></a>
+                <a class="selectors"><img src="images/video2.png" id="video2" alt="playVideo2" title="playVideo2"></a>
+                <a class="selectors"><img src="images/video3.png" id="video3" alt="playVideo3" title="playVideo3"></a>
+                <a class="selectors"><img src="images/video4.png" id="video4" alt="playVideo4" title="playVideo4"></a>
+            </div>
+        </section>
+        <section>
+            <article id="displayText"></article>
+        </section>
+        <section>
+        </section>
+        <section>
+            <a href="javascript/test7.js"><img src="images/js.png" id="js" alt="javascript code" title="javascript code"></a>
+        </section>
+        <nav>
+            <a href="test6.html"><img id="navLeft" src="images/navLeft.png" alt="navLeft" title="navLeft"></a>
+            <a href="test8.html"><img id="navRight" src="images/navRight.png" alt="navRight" title="navRight"></a>
+        </nav>
+        <script src="javascript/test7.js"></script>
+    </body>
+</html>

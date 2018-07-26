@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Javascript Examples</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                text-align: center;
+                background-color: black;
+                margin-top: 3em;
+                margin-bottom: 3em;
+            }
+            header{
+                font-size: 3em; 
+                font-weight: bolder; 
+                color: blanchedalmond;
+                text-decoration-line: underline;
+                text-decoration-style: solid;
+                text-decoration-color: chartreuse;
+                text-decoration-style: wavy;
+            }
+            article#displayText{
+                margin: auto;
+                font-size: 2em; 
+                font-weight: bolder; 
+                margin-top: 2em;
+                color: blanchedalmond;
+                line-height: 1.5;
+                width: 60%;
+                border: solid chartreuse 0.1em;
+            }
+            div.salesRow:nth-child(2n){
+                background-color: darkorange;
+            }
+            div.salesRow:nth-child(2n+1){
+                background-color: darkred;
+            }
+            img#codeImg{
+                margin: auto;
+                margin-top: 3em;
+                margin-bottom: 3em;
+                width: 60%;
+            }
+            img#navRight,img#navLeft,img#navX{
+                width: 5em;
+                position: relative;
+            }
+            img#navRight{
+                left: 10%;
+            }
+            img#navLeft{
+                left: -10%;
+            }
+            img#navX{
+                left: 10%;
+            }
+        </style>
+        <style media="screen and (max-width:851px)">
+            header{
+                font-size: 1.8em;
+            }
+            article#displayText{
+                font-size: 0.8em;
+                margin-top: 2em;
+                width: 100%;
+            }
+            article#display img{
+                width: 100%;
+            }
+            img#codeImg{
+                margin-top: 1em;
+                width: 100%;
+            }
+            img#navRight,img#navLeft,img#navX{
+                width: 3em;
+            }
+        </style>
+        <style media="screen and (max-device-width:479px)">
+            header{
+                font-size: 1.8em;
+            }
+            article#displayText{
+                font-size: 0.8em;
+                margin-top: 2em;
+                width: 100%;
+            }
+            article#display img{
+                width: 100%;
+            }
+            img#codeImg{
+                margin-top: 1em;
+                width: 100%;
+            }
+            img#navRight,img#navLeft,img#navX{
+                width: 3em;
+            }
+        </style>
+    </head>
+    <body>
+        <header></header>
+        <section id="section">
+            <article id="displayText"></article>
+        </section>
+        <section>
+            <img src="" id="codeImg" alt="code">
+        </section>
+        <nav>
+            <a href="test3.html"><img id="navLeft" src="images/navLeft.png" alt="navLeft" title="navLeft"></a>
+            <a href="test5.html"><img id="navRight" src="images/navRight.png" alt="navRight" title="navRight"></a>
+        </nav>
+        <script src="javascript/test4.js"></script>
+    </body>
+</html>

@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+    <head>
+        <title>JS Closure Function Examples</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                text-align: center;
+                background-color: black;
+                margin-top: 3em;
+                margin-bottom: 3em;
+            }
+            header{
+                font-size: 3em; 
+                font-weight: bolder; 
+                color: blanchedalmond;
+                text-decoration-line: underline;
+                text-decoration-style: solid;
+                text-decoration-color: chartreuse;
+                text-decoration-style: wavy;
+            }
+            article#display{
+                font-size: 2em; 
+                font-weight: bolder; 
+                margin-top: 2em;
+                color: blanchedalmond;
+            }
+            img#codeImg{
+                margin: auto;
+                margin-top: 3em;
+                margin-bottom: 3em;
+                width: 50%;
+            }
+            img#navRight,img#navLeft,img#navX{
+                width: 5em;
+                position: relative;
+            }
+            img#navRight{
+                left: 10%;
+            }
+            img#navLeft{
+                left: -10%;
+            }
+            img#navX{
+                left: 10%;
+            }
+            form#form{
+                margin: auto;
+                margin-top: 5em;
+                display: table;
+                border-collapse: separate;
+                border-spacing: 0.5em;
+            }
+            div.tableRow{
+                display: table-row;
+            }
+            input[type="text"]{
+                font-size: 1em;
+                color: blue;
+                line-height: 2;
+                font-weight: 500;
+                display: table-cell;
+                vertical-align: central;
+            }
+            label{
+                color: white;
+                display: table-cell;
+                font-size: 1.5em;
+                line-height: 2;
+                font-weight: 500;
+                padding-left: 1em;
+                padding-right: 1em;
+                display: table-cell;
+                vertical-align: central;
+            }
+            input[type="button"]{
+                font-size: 0.96em;
+                line-height: 2;
+                font-weight: 900;
+                display: block;
+                margin: auto;
+                background-color: lightskyblue;
+                width: 18.5em;
+                position: relative;
+                top: 1.5em;
+                left: 0.8em;
+            }
+        </style>
+        <style media="screen and (max-width:851px)">
+            header{
+                font-size: 1.8em;
+            }
+            article#display{
+                font-size: 1.5em;
+                margin-top: 0.8em;
+            }
+            article#display img{
+                width: 95%;
+            }
+            img#codeImg{
+                margin-top: 1em;
+                width: 95%;
+            }
+            img#navRight,img#navLeft,img#navX{
+                width: 3em;
+            }
+            form#form{
+                margin-top: 2em;
+                border-spacing: 0.1em;
+            }
+            input[type="text"]{
+                font-size: 0.7em;
+            }
+            label{
+                font-size: 1em;
+                padding-left: 0.5em;
+                padding-right: 0.5em;
+            }
+            input[type="button"]{
+                font-size: 0.7em;
+                margin-top: 1em;
+                width: 19em;
+                top: 0.5em;
+                left: 0.4em;
+            }
+        </style>
+        <style media="screen and (max-device-width:479px)">
+            header{
+                font-size: 1.8em;
+            }
+            article#display{
+                font-size: 1.5em; 
+            }
+            article#display img{
+                width: 95%;
+            }
+            img#codeImg{
+                margin-top: 1em;
+                width: 95%;
+            }
+            img#navRight,img#navLeft,img#navX{
+                width: 3em;
+            }
+            form#form{
+                margin-top: 2em;
+                border-spacing: 0.1em;
+            }
+            input[type="text"]{
+                font-size: 0.7em;
+            }
+            label{
+                font-size: 1em;
+                padding-left: 0.5em;
+                padding-right: 0.5em;
+            }
+            input[type="button"]{
+                font-size: 0.7em;
+                margin-top: 1em;
+                width: 19em;
+                top: 0.5em;
+                left: 0.4em;
+            }
+        </style>
+    </head>
+    <body>
+        <header></header>
+        <section>
+            <article>
+                <form id="form">
+                    <div class="tableRow">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="tableRow">
+                        <label for="address">Address</label>
+                        <input type="text" name="address" id="address">
+                    </div>
+                    <div class="tableRow">
+                        <label for="city">City</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div class="tableRow">
+                        <label for="state">State</label>
+                        <input type="text" name="state" id="state">
+                    </div>
+                    <div class="tableRow">
+                        <label for="country">Country</label>
+                        <input type="text" name="country" id="country">
+                    </div>
+                </form>
+                <input type="button" id="button" value="OK">
+            </article>
+            <article id="display"></article>
+            <article id="code">
+                <img id=codeImg src="" alt="code" title="code">
+            </article>
+        </section>
+        <nav>
+            <a href="test7.html"><img id="navLeft" src="images/navLeft.png" alt="navLeft" title="navLeft"></a>
+            <a href="test9.html"><img id="navRight" src="images/navRight.png" alt="navRight" title="navRight"></a>
+        </nav>
+        <script src="javascript/test8.js"></script>
+    </body>
+</html>

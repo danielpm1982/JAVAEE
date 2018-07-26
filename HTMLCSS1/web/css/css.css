@@ -1,0 +1,275 @@
+@font-face {
+  font-family: 'Risque';
+  src: url(https://fonts.gstatic.com/s/risque/v4/TBIDxp8AFCZUbeELSgrJGA.woff2);
+}
+@font-face {
+  font-family: 'Oregano';
+  src: url(https://fonts.gstatic.com/s/oregano/v4/qJLczRRM6nLXqdHODojKYg.woff2);
+}
+
+body{
+    background-color: black;
+    font-family: sans-serif;
+    font-size: medium;
+    text-align: center;
+}
+
+p{
+    line-height: 1.5;
+}
+
+a:link{
+    color: blanchedalmond;
+}
+
+a:visited{
+    color: lightskyblue;
+}
+
+a:hover,a:focus{
+    color: lightgray;
+}
+
+table {
+    margin: auto;
+    border: thin solid blanchedalmond;
+    font-family: monospace;
+    font-size: 1em;
+    caption-side: bottom;
+    /*border-spacing: 0.2em;*/
+    border-collapse: collapse;
+    
+}
+
+td, th {
+    border: thin dotted white;
+    padding: 0.2em;
+}
+
+th{
+    background-color: chocolate;
+}
+
+tr:nth-child(even) {
+    background-color: darkblue; 
+} 
+
+tr:nth-child(odd) {
+    background-color: green;
+}
+
+table table th{
+    background-color: black;
+}
+
+caption {
+    font-style: italic;
+    padding-top: 2%;
+}
+
+/*page: index.html*/
+
+div#mainPageAllContent{
+    border: solid white 0.1em;
+    width: 45%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 2%;
+}
+
+div#mainPageAllContent header h1{
+    font-family: 'Risque',monospace;
+    font-size: 3em;
+    border-bottom: solid 8px blanchedalmond;
+    border-bottom-style: ridge;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 0%;
+    display: inline;
+    line-height: 1.4;
+    color: blanchedalmond;
+}
+
+div#mainPageAllContent header h1 em{
+    color: coral;
+    font-family: cursive;
+}
+
+div#mainPageAllContent section{
+    margin-top: 9%;
+}
+
+div#mainPageAllContent section article#article1 video{
+    width: 75%;
+}
+
+div#mainPageAllContent section article#article2{
+    margin-top: 3em;
+    margin-bottom: 1em;
+    margin-left: 3.8em;
+    margin-right: 3.8em;
+    padding-top: 1em;
+    padding-bottom: 1.3em;
+    background-image: url(../images/matrix.jpg);
+}
+
+div#mainPageAllContent section article#article2 p, div#mainPageAllContent section article#article0 p{
+    font-family: 'Oregano',sans-serif;
+    font-size: 1.8em;
+    margin-left: 2em;
+    margin-right: 2em;
+    background-color: black;
+    color: lightgreen;
+}
+
+div#mainPageAllContent section article#article0 p{
+    margin-top: 1em;
+    margin-bottom: 3em;
+    font-size: 1.5em;
+    margin-left: 3.2em;
+    margin-right: 3.2em;
+    color: blanchedalmond;
+    border: double coral 5px;
+    padding: 0.1em;
+}
+
+div#mainPageAllContent section article#article2 p a:link{
+    text-decoration: none;
+}
+
+div#mainPageAllContent footer a{
+    font-family: cursive;
+    font-size: 1.3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: black;
+    line-height: 3em;
+}
+
+div#mainPageAllContent footer a:link{
+    text-decoration: none;
+}
+
+div#mainPageAllContent footer div#linkGroup{
+    text-align: left;
+    margin: auto;
+    margin-top: 1em;
+    border: dashed coral 3px;
+    width: 22em;
+    padding: 1em;
+}
+
+div#mainPageAllContent footer p{
+    color: blanchedalmond;
+    font-family: 'Oregano',sans-serif;
+    font-size: 2em;
+    text-decoration: underline;
+    margin-bottom: 0.2em;
+}
+
+div#mainPageAllContent footer p#compatibilityAdvice1{
+    color: blanchedalmond;
+    font-family: monospace;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin-bottom: 0.2em;
+    margin-top: 4em;
+    margin-left:2em;
+    margin-right:2em;
+}
+
+div#mainPageAllContent footer p#compatibilityAdvice2{
+    color: blanchedalmond;
+    font-family: monospace;
+    font-size: 1.1em;
+    text-decoration: none;
+    margin-bottom: 1em;
+    margin-top: 2em;
+    text-align: justify;
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
+/*page: error.html*/
+
+div#errorPageAllContent{
+    border: dashed red 0.01em;
+    width: 50%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 2%;
+}
+
+div#errorPageAllContent header{
+    margin-top: -2em;
+}
+
+div#errorPageAllContent header h1{
+    font-size: 3em;
+    line-height: 1.4;
+    color: blanchedalmond;
+}
+
+div#errorPageAllContent header h1 em{
+    color: coral;
+    font-family: cursive;
+}
+
+div#errorPageAllContent section{
+    margin-top: 0%;
+}
+
+div#errorPageAllContent section article#article1 figure img{
+    width: 50%;
+}
+
+div#errorPageAllContent section article#article2{
+    margin-left: 3.8em;
+    margin-right: 3.8em;
+}
+
+div#errorPageAllContent section article#article2 p{
+    font-family: 'Oregano',sans-serif;
+    font-size: 1.8em;
+    margin-left: 2em;
+    margin-right: 2em;
+    color: lightgreen;
+}
+
+div#errorPageAllContent section article#article2 p#userNameDialogue{
+    color: blanchedalmond;
+}
+
+div#errorPageAllContent section article#article2 p#userNameDialogue.redText{
+    color: red;
+    font-family: monospace;
+    font-size: 2em;
+    line-height: 1.2em;
+}
+
+div#errorPageAllContent section article#article2 p a{
+    display: block;
+    margin-top: 0.5em;
+}
+
+div#errorPageAllContent section article#article2 form input#userName{
+    color: blue;
+    font-weight: bolder;
+    line-height: 2em;
+    font-size: 1em;
+    margin-right: 0.2em;
+}
+
+div#errorPageAllContent section article#article2 form input#button{
+    font-size: 1.75em;
+    position: relative;
+    top: 0.145em;
+}
+
+div#errorPageAllContent footer a img{
+    margin-top: -10em;
+    width: 4em;
+    position: relative;
+    left: -45%;
+}

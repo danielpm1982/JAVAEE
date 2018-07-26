@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+  <tlib-version>1.0</tlib-version>
+  <short-name>MyTagLib</short-name>
+  <uri>http://danielpm1982.com/myTagLib</uri>
+  <function>
+    <name>getAge</name>
+    <function-class>model.MyTagLibClass</function-class>
+    <function-signature>String getAge(java.lang.String, int, int, int)</function-signature>
+  </function>
+  <tag>
+    <description>Hello World Tag</description>
+    <name>helloUser</name>
+    <tag-class>model.HelloTagHandler</tag-class>
+    <body-content>empty</body-content>
+    <attribute>
+      <name>userName</name>
+      <type>java.lang.String</type>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  <tag>
+    <description>Date Formatted Tag</description>
+    <name>getFormattedDate</name>
+    <tag-class>model.DateTagHandler</tag-class>
+    <body-content>empty</body-content>
+    <attribute>
+      <name>date</name>
+      <type>java.time.ZonedDateTime</type>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  <tag-file>
+    <name>textDateFooterImage</name>
+    <path>/WEB-INF/tags/textDateFooterImage.tag</path>
+  </tag-file>
+  <tag-file>
+    <name>bigText</name>
+    <path>/WEB-INF/tags/bigText.tag</path>
+  </tag-file>
+  <tag>
+    <description>Time Since Birth Tag</description>
+    <name>getTimeSinceBirth</name>
+    <tag-class>model.TimeSinceBirthTagHandler</tag-class>
+    <body-content>empty</body-content>
+    <attribute>
+      <name>year</name>
+      <type>java.lang.String</type>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>month</name>
+      <type>java.lang.String</type>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <name>day</name>
+      <type>java.lang.String</type>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  <tag-file>
+    <name>getAge</name>
+    <path>/WEB-INF/tags/getAge.tag</path>
+  </tag-file>
+  <tag>
+    <description>Big Text Simple Tag</description>
+    <name>getSimpleTagText</name>
+    <tag-class>model.BigTextHandler</tag-class>
+    <body-content>scriptless</body-content>
+    <attribute>
+      <name>text</name>
+      <type>java.lang.String</type>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  <tag-file>
+    <name>getText</name>
+    <path>/WEB-INF/tags/bigTextWithSimpleTag.tag</path>
+  </tag-file>
+  <tag>
+    <description>Tag Attribute Iteration</description>
+    <name>getIteration</name>
+    <tag-class>model.IterationHandler</tag-class>
+    <body-content>scriptless</body-content>
+    <attribute>
+      <name>objectToIterate</name>
+      <type>java.util.List</type>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  <tag>
+    <description>Big Text Classic Tag</description>
+    <name>getClassicalTagText</name>
+    <tag-class>model.ClassicalBigTextHandler</tag-class>
+    <body-content>scriptless</body-content>
+  </tag>
+  <tag>
+    <description>Classical Tag Body Iteration</description>
+    <name>getClassicalIteration</name>
+    <tag-class>model.ClassicalIterationHandler</tag-class>
+    <body-content>scriptless</body-content>
+    <attribute>
+      <name>timesToIterate</name>
+      <type>java.lang.String</type>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  <tag>
+    <description>Classical Tag Collection attribute Iteration</description>
+    <name>getClassicalCollectionIteration</name>
+    <tag-class>model.ClassicalCollectionIterationHandler</tag-class>
+    <body-content>scriptless</body-content>
+    <attribute>
+      <name>objectToIterate</name>
+      <type>java.util.List</type>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  <tag>
+    <description>Classical Tag Body Manipulation with BodyTagSupport API</description>
+    <name>getClassicalTagBodyManipulated</name>
+    <tag-class>model.ClassicalTagBodyManipulated</tag-class>
+    <body-content>scriptless</body-content>
+    <attribute>
+      <name>name</name>
+      <type>java.lang.String</type>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  <tag>
+    <description>Classical Tag Nesting - Level0</description>
+    <name>getClassicalLevel0TagText</name>
+    <tag-class>model.ClassicalLevel0TagText</tag-class>
+    <body-content>scriptless</body-content>
+    <attribute>
+      <name>level0Attribute</name>
+      <type>java.lang.String</type>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  <tag>
+    <description>Classical Tag Nesting - Level1</description>
+    <name>getClassicalLevel1TagText</name>
+    <tag-class>model.ClassicalLevel1TagText</tag-class>
+    <body-content>scriptless</body-content>
+    <attribute>
+      <name>level1Attribute</name>
+      <type>java.lang.String</type>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  <tag>
+    <description>Classical Tag Nesting - Level2</description>
+    <name>getClassicalLevel2TagText</name>
+    <tag-class>model.ClassicalLevel2TagText</tag-class>
+    <body-content>scriptless</body-content>
+    <attribute>
+      <name>level2Attribute</name>
+      <type>java.lang.String</type>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+</taglib>
