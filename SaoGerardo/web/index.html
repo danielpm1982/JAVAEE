@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Paróquia São Gerardo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/css.css" media="screen and (min-width:851.1px)"/>
+        <link rel="stylesheet" type="text/css" href="css/css2.css" media="screen and (max-width:851px)"/>
+    </head>
+    <body>
+        <div id="allContent">
+            <div id="bemVindo1">Bem-Vindo ao novo site da Paróquia São Gerardo Majella !!</div>
+            <div id="bemVindo2">(Fortaleza-Ceará)</div>
+            <div id="imagemPrincipal">
+                <img alt="FotoSãoGerardo" title="FotoSãoGerardo" src="imagens\img1.png" />
+                <img alt="FotoSãoGerardo" title="FotoSãoGerardo" src="imagens\img2.png" />
+                <img alt="FotoSãoGerardo" title="FotoSãoGerardo" src="imagens\img3.png" />
+            </div>
+            <div id="aviso1">Em breve, vários novos serviços e recursos<br>estarão disponíveis nesta Página.</div>
+            <div id="aviso2">Por enquanto, visitem, curtam, sigam, compartilhem e colaborem com a página do facebook:</div>
+            <div id="aviso3"><a href='http://www.facebook.com/paroquiaDeSaoGerardo' target="_self" title="Paróquia São Gerardo Majella">Paróquia São Gerardo Majella</a></div>
+        </div>
+        <script>
+            var aLink = document.getElementsByTagName("a");
+            aLink[0].style.color="brown";
+            aLink[0].style.textDecoration="none";
+            aLink[0].onmouseover = function(){
+                aLink[0].style.color="darkolivegreen";
+                aLink[0].style.textDecoration="underline overline blue";
+            };
+            aLink[0].onmouseout = function(){
+                aLink[0].style.color="brown";
+                aLink[0].style.textDecoration="none";
+            };
+        </script>
+    </body>
+</html>

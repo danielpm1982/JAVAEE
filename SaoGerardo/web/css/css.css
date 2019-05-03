@@ -1,0 +1,52 @@
+body{
+    text-align: center;
+    background-color: black;
+    border: brown outset 0.5em;
+    width: 60em;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 0.5em;
+    line-height: 2;
+}
+div#allContent{
+    background-color: antiquewhite;
+    padding: 2em;
+}
+div#imagemPrincipal{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+div#imagemPrincipal img{
+    width: 18.5em;
+    height: 22em;
+    margin: auto;
+    margin-top: 0.7em;
+}
+div#bemVindo1,div#bemVindo2{
+    font-family: serif;
+    font-weight: bold;
+    font-size: 3.4em;
+    line-height: 1.5;
+}
+div#bemVindo2{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+div#aviso1,div#aviso2{
+    margin-bottom: 0.5em;
+}
+div#aviso1,div#aviso2,div#aviso3{
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 2em;
+}
+div#aviso1{
+    font-family: monospace;
+    font-size: 1.8em;
+}
+div#aviso3 a{
+    font-size: 1.5em;
+    font-family: serif;
+    font-weight: bold;
+}
